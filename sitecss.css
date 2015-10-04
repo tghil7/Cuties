@@ -1,0 +1,71 @@
+#pageHeader
+{
+  background-color: #0099CC ;
+}
+
+.signIn {
+  margin-left: 200px;
+  font-family: "Helvetica, sans-serif";
+  font-style: normal;
+  font-size: 14px;
+  float: right;
+}
+
+
+.signUpForm
+{
+ float:right;
+  border-style: solid;
+  padding: 5px;
+  text-align: left;
+  width:  270px;
+  height: 300px;
+}
+
+.names
+{
+  color: gold;
+  font-style: italic;
+}
+
+#testimonial
+{
+  float:left;
+}
+
+.labelClass
+{
+  width: 100px;
+}
+
+.textClass
+{
+  width: 150px;
+}
+
+#searchBox
+{
+  margin: 5px;
+  float: right;
+}
+
+.myImg
+{
+  with: 240 px;
+  height: 300px;
+  float: left;
+}
+
+#wrapper
+{
+  font-size: 14px;
+  font-family: Helvetica;
+
+}
+
+#newrapper
+{
+  font-size: 14px;
+  font-family: Helvetica;
+
+}
