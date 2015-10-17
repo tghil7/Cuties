@@ -12,21 +12,40 @@
 
        </head>
        <body>
-               <div id = newrapper>
-                      <input type="text" id="searchBox"><span class="glyphicon glyphicon-search"></span>
-                      <img src="" id="profilePicture" class="myImg">
-                      <form id="userDetails">
-                                <label class="labelClass">A little about myself:</label><input type="textarea" class="textClass"><br/><br/>
-                                <label class="labelClass">Age:</label><input type="text"  class="textClass"><br/><br/>
-                                <label class="labelClass">Kids:</label><input type="text" class="textClass"><br/><br/>
-                                <label class="labelClass">Favorite color:</label><input type="text" class="textClass"><br/><br/>
-                                <label class="labelClass">Weight:</label><input type="text" class="textClass"><br/><br/>
-                                <label class="labelClass">Height:</label><input type="text"  class="textClass"><br/><br/>
-                                <label class="labelClass">Location:</label><input type="text" class="textClass"><br/><br/>
-                                <label class="labelClass">Looking for:</label><input type="textarea" class="textClass"><br/><br/>
-                                <label class="labelClass">Education Level:</label><input type="text" class="textClass"><br/><br/>
-                                <label class="labelClass">Ethnicity:</label><input type="text" class="textClass"><br/><br/>
-                      </form>
+       <!--Using a wrapper to make sure the display is showing within the weight and height limits set-->
+
+               <div id = newrapper class="container-fluid" style="margin-left: 200px; margin-right: 200px">
+                        <div id = "pageHeader" class="jumbotron" style="background-color: #0099CC">
+                           <h1>Cuties!</h1>
+                           <p style="margin-left: 50px; float: right"> The number one site for people looking for serious relationships!</p></br></br>
+                       </div>
+                      <div id="myProfile">
+                        <!--Form for showing information about the individual registered-->
+
+                                  <div id ="searchSection">
+                                        <button id="searchButton"><span class="glyphicon glyphicon-search"></span></button>&nbsp;
+                                        <input type="text" id="searchBox">
+                                  </div>
+                                  <div id="profileBody">
+                                         <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY4hrw2AhsAxrKLAFNtFYfzT9azEkevq3Nf5DBosO9BFzFlHTSVw" id="profilePicture" class="myImg">
+                                         <form id="userDetails" class="profileForm">
+                                                <label  for="myself" class="labelClass">A little about myself:</label><input type="textarea" class="textClass" id="myself"><br/><br/>
+                                                <label for ="age" class="labelClass">Age:</label><input type="text"  class="textClass" id="age"><br/><br/>
+                                                <label for="kids" class="labelClass">Kids:</label><input type="text" class="textClass" id="kids"><br/><br/>
+                                                <label for="color" class="labelClass">Favorite color:</label><input type="text" class="textClass" id="color"><br/><br/>
+                                                <label for="weight" class="labelClass">Weight:</label><input type="text" class="textClass" id="weight"><br/><br/>
+                                                <label  for="height" class="labelClass">Height:</label><input type="text"  class="textClass" id="height"><br/><br/>
+                                                <label for="location" class="labelClass">Location:</label><input type="text" class="textClass" id="location"><br/><br/>
+                                                <label  for="lookingText" class="labelClass">Looking for:</label ><input type="textarea" class="textClass" id="lookingText"><br/><br/>
+                                                <label for="education" class="labelClass">Education Level:</label><input type="text" class="textClass" id="education"><br/><br/>
+                                                <label for="ethnicity" class="labelClass">Ethnicity:</label><input type="text" class="textClass" id="ethnicity"><br/><br/>
+                                         </form>
+                                 </div>
+                      </div>
+                      <footer style="float: left; clear: both; margin-top:30px">
+                                <p><small><i> Copyright &copy 2015 Cuties. All Rights Reserved. Contact information: <a href="mailto:webmaster@cuties.com">
+                                 webmaster@cuties.com</a></i></small></p>
+                      </footer>
                </div>
        </body>
 </html>

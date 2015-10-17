@@ -14,12 +14,22 @@
 
 .signUpForm
 {
- float:right;
+  float:right;
   border-style: solid;
   padding: 5px;
   text-align: left;
   width:  270px;
   height: 300px;
+}
+
+.profileForm
+{
+  float:right;
+  border-style: solid;
+  padding: 5px;
+  text-align: left;
+  width:  270px;
+  height: 540px;
 }
 
 .names
@@ -69,3 +79,25 @@
   font-family: Helvetica;
 
 }
+
+#userDetails
+{
+  float:right;
+  border-style: groove;
+}
+
+#searchSection
+{
+  float:right;
+  margin:15px;
+  inline: display-block;
+  clear: left;
+}
+
+#profileBody
+{
+  margin:15px;
+  clear: both;
+}
+
+
