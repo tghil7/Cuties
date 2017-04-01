@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width= device-width, initial-scale = 1">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="sitecss.css">
+  <script type="text/javascript" src="cuties.js"></script>
+</head>
+<body class="container-fluid">
+<div  id="wrapper" style="margin-left: 200px; margin-right: 200px; min-width =100%; background-image = url('C:\Users\Anicet\Documents\Web projects\Cuties\images\recent1.jpg')">
+    <div id = "pageHeader" class="jumbotron" style="background-color: #0099CC">
+    <h1><a href="Home.html">Cuties!</a></h1>
+    <p style="margin-left: 50px; float: right"> The number one site for people looking for serious relationships!</p></br></br>
+         <div id="mySign" class="signIn">
+             <label >Login: </label>
+             <input type="text" id="username">&nbsp;&nbsp;
+              <label >Password: </label>
+             <input type="text" id="password">&nbsp;&nbsp;
+             <button class="btn btn-primary active" onclick="window.open('MyProfile.html','_self')">Submit</button>
+        </div>
+
+    </div>
+    <div id="mainTab">
+      <ul class="nav nav-tabs">
+        <li ><a href="Home.html">HOME</a></li>
+        <li class="active"><a href="advancedSearch.html">ADVANCED SEARCH</a></li>
+        <li ><a href="message.html">SEND A MESSAGE</a></li>
+        <li><a href="MyProfile.html">PROFILE SETTINGS</a></li>
+      </ul>
+    </div>
+     <div id ="contactPage">
+              
+           <div id="advancedSearchForm">
+		   <br/><br/><br/>
+              <form id = "mySearch" method="post" action="" >
+                    <label for ="sex" class="labelClass">Sex:</label>
+					<select>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                    </select>&nbsp;&nbsp;
+                   <label for ="age" class="labelClass">Age:</label>
+				   <select>
+                            <option value="2128">21-28</option>
+                            <option value="2835">28-35</option>
+                            <option value="3542">35-42</option>
+                            <option value="4249">42-49</option>
+                            <option value="4956">49-56</option>
+                   </select><br/>
+                   <label for="kids" class="labelClass">Kids:</label>
+				   <select>
+                            <option value="0">0</option>
+                            <option value="1 ">1</option>
+                            <option value="2">2 or more</option>
+                   </select><br/>
+                   <label for="location" class="labelClass">Location:</label><input type="text" id="location"><br/><br/>
+                   <label  for="lookingText" class="labelClass">Profession field</label>
+				   <select>
+                            <option value="hospitality">Hospitality</option>
+                            <option value="healthcare">Health Care</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="services">Services</option>
+                            <option value="legal">Legal</option>
+                   </select><br/>
+                   <label for="education" class="labelClass">Education Level:</label>
+				   <select>
+                            <option value="high school">High School or more</option>
+                            <option value="some college">Some College or more</option>
+                            <option value="bachelor">Bachelor's degree or more</option>
+                            <option value="advanced">Advanced college degree</option>
+                   </select><br/>
+				   
+                   <label for="ethnicity" class="labelClass">Ethnicity:</label>
+				   <select>
+                            <option value="caucasian">Caucasian</option>
+                            <option value="asian">Asian</option>
+                            <option value="black">African American</option>
+                   </select><br/><br/><br/>
+				   <input type="button" id="Contact"  value ="Submit"  class="btn btn-success"/>&nbsp;&nbsp;&nbsp;
+                  <button id="reset" onclick="reset()" class="btn btn-default">Reset</button>
+				  
+             </form>
+        </div>
+             
+</div>
+  
+
+
+   <footer style="bottom: 0px; padding-left: 40px; text-align: center; padding-top: 5px; clear: both">
+        <p><small><i> Copyright &copy 2015 Cuties. All Rights Reserved. Contact information: <a href="mailto:webmaster@cuties.com">
+    webmaster@cuties.com</a></i></small></p>
+   </footer>
+ </div>
+</body>
+</html>
