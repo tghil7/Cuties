@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width= device-width, initial-scale = 1">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="sitecss.css">
+  <script type="text/javascript" src="cuties.js"></script>
+</head>
+<body class="container-fluid">
+<div  id="wrapper">
+   <div id = "pageHeader" class="jumbotron" >
+    <h1><a href="Home.html">Cuties!</a></h1>
+    <p> The number one site for people looking for serious relationships!</p></br></br>
+         <div id="mySign" class="signIn">
+		     <h1 class="title"> Log in</h1>
+             <label for="username">Username: </label>
+             <input type="text" id="username" class="credentials">&nbsp;&nbsp;
+              <label for="password" >Password : </label>
+             <input type="text" id="password" class="credentials">&nbsp;&nbsp;
+             <button class="btn btn-primary active" onclick="window.open('MyProfile.html','_self')">Submit</button>
+        </div>
+
+    </div>
+    <div id="mainTab">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="Home.html">HOME</a></li>
+        <li><a href="advancedSearch.html">ADVANCED SEARCH</a></li>
+        <li class="active"><a href="message.html">SEND A MESSAGE</a></li>
+        <li><a href="MyProfile.html">PROFILE SETTINGS</a></li>
+		<li ><a href="#process">OUR PROCESS</a></li>
+		
+      </ul>
+    </div>
+	<div id="dropNav" class="dropdown">
+              <button id="buttonMenu" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
+              <ul class="dropdown-menu pull-left">
+			  <li><a href="Home.html">HOME</a></li>
+                  <li><a href="advancedSearch.html">ADVANCED SEARCH</a></li>
+                  <li class="active"><a href="message.html">SEND A MESSAGE</a></li>
+                  <li><a href="MyProfile.html">PROFILE SETTINGS</a></li>
+		          <li><a href="#process">OUR PROCESS</a></li>
+		          
+              </ul>
+     </div>
+     <div id ="contactPage">
+              
+           <div id="contactForm">
+		   <br/><br/><br/>
+              <form id = "sendMessage" method="post" action="" >
+                   <p>Pseudoname you wish to contact:<br/><br/> <input type="text" name="firstName" id="firstName" size="25" /></p><br /><br />
+                   <br /><br />
+                   <img src="C:\Users\Anicet\Documents\Web projects\Cuties\images\messageImage.jpg" class="img-rounded" width="300px"; height="200px"; style="float:right">
+                   <p>Send them a Message below:</p><br />
+				   
+                   <textarea id="commentText" cols="75" rows= "7"></textarea><br /><br /><br />
+                   <input type="button" id="Contact"  value ="Submit"/>&nbsp;&nbsp;&nbsp;
+                  <button id="reset" onclick="reset()">Reset</button>
+				  
+             </form>
+        </div>
+             
+</div>
+  
+
+     <div id ="bottomLinks">
+                            <a href="safety.html" style="padding-right:100px">Safety tips</a>
+                            <a href="privacyPolicy.html" style="padding-right:100px">Privacy Policy</a>
+                            <a href="termsAndConditions.html" style="padding-right:100px">Terms and conditions</a>
+                            <a href="MyProfile.html" style="padding-right:100px">Singles scene</a>					    
+                      </div>
+   <footer style="bottom: 0px; padding-left: 40px; text-align: center; padding-top: 5px; clear: both">
+        <p><small><i> Copyright &copy 2015 Cuties. All Rights Reserved. Contact information: <a href="mailto:webmaster@cuties.com">
+    webmaster@cuties.com</a></i></small></p>
+   </footer>
+ </div>
+</body>
+</html>

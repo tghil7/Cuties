@@ -3,7 +3,7 @@
        <head>
           <meta charset="UTF-8">
           <title>Your Profile</title>
-          <meta name="viewport" content="width= container-width, initial-scale = 1">
+          <meta name="viewport" content="width= device-width, initial-scale = 1">
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
           <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -14,20 +14,60 @@
        <body>
        <!--Using a wrapper to make sure the display is showing within the weight and height limits set-->
 
-               <div id = newrapper class="container-fluid" style="margin-left: 200px; margin-right: 200px">
+                 <div id = "newrapper" class="container-fluid" style="margin-left: 200px; margin-right: 200px">
                         <div id = "pageHeader" class="jumbotron" style="background-color: #0099CC">
-                           <h1>Cuties!</h1>
+                           <h1><a href="Home.html">Cuties!</a></h1>
                            <p style="margin-left: 50px; float: right"> The number one site for people looking for serious relationships!</p></br></br>
                        </div>
+                 <div id="mainTab">
+                   <ul class="nav nav-tabs">
+                     <li  id="homeLink" ><a href="Home.html">HOME</a></li>
+                     <li id="searchLink"><a href="advancedSearch.html">ADVANCED SEARCH</a></li>
+                     <li id="msgLink"><a href="message.html">SEND A MESSAGE</a></li>
+                     <li id="profileLink" class="active"><a href="MyProfile.html" >PROFILE SETTINGS</a></li>
+					 <li><a href="Process.html">OUR PROCESS</a></li>
+		             <li><a href="Blog.html">BLOG</a></li>
+		             <li><a href="News.html">NEWS</a></li>
+                   </ul>
+                 </div>
                       <div id="myProfile">
                         <!--Form for showing information about the individual registered-->
 
-                                  <div id ="searchSection">
-                                        <button id="searchButton"><span class="glyphicon glyphicon-search"></span></button>&nbsp;
-                                        <input type="text" id="searchBox">
-                                  </div>
+                        <form id="searchArea">
+                          <h4 style="color: red">Quick search</h4>
+                          <label>Sex:</label>
+                          <select>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>Age:</label>
+                          <select>
+                            <option value="2128">21-28</option>
+                            <option value="2835">28-35</option>
+                            <option value="3542">35-42</option>
+                            <option value="4249">42-49</option>
+                            <option value="4956">49-56</option>
+                          </select>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>Profession:</label>
+                          <select>
+                            <option value="hospitality">Hospitality</option>
+                            <option value="healthcare">Health Care</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="services">Services</option>
+                            <option value="legal">Legal</option>
+                          </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						  <label>Race:</label>
+                          <select>
+                            <option value="caucasian">Caucasian</option>
+                            <option value="asian">Asian</option>
+                            <option value="black">African American</option>
+                          </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <button id="searchButton" style="display:inline-block"><span class="glyphicon glyphicon-search"></span></button>&nbsp;
+                          &nbsp;&nbsp; <a href="advancedSearch.html">Advanced Search</a>
+                        </form>
                                   <div id="profileBody">
-                                         <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY4hrw2AhsAxrKLAFNtFYfzT9azEkevq3Nf5DBosO9BFzFlHTSVw" id="profilePicture" class="myImg">
+                                         <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSY4hrw2AhsAxrKLAFNtFYfzT9azEkevq3Nf5DBosO9BFzFlHTSVw" id="profilePicture" class="img-rounded" height="300px" style="float:left">
                                          <form id="userDetails" class="profileForm">
                                                 <label  for="myself" class="labelClass">A little about myself:</label><input type="textarea" class="textClass" id="myself"><br/><br/>
                                                 <label for ="age" class="labelClass">Age:</label><input type="text"  class="textClass" id="age"><br/><br/>
@@ -41,11 +81,34 @@
                                                 <label for="ethnicity" class="labelClass">Ethnicity:</label><input type="text" class="textClass" id="ethnicity"><br/><br/>
                                          </form>
                                  </div>
+								 <br/><br/>
+								 <div id="favorite" style="float:left; clear:left">
+								 <h5>Profiles you have recently visited:</h5><br/><br/>
+								 <table>
+								          <tr>
+										      <td><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> </td>
+										      <td><img src="C:\Users\Anicet\Documents\Web projects\Cuties\images\recent1.jpg" alt="Recent 1" class="carouselImage img-rounded"></td>
+											  <td><img src="C:\Users\Anicet\Documents\Web projects\Cuties\images\recent2.jpg" alt="Recent 2" class="carouselImage img-rounded"></td>
+											  <td><img src="C:\Users\Anicet\Documents\Web projects\Cuties\images\recent3.jpg" alt="Recent 3" class="carouselImage img-rounded"></td>
+											  <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></td>
+								          </tr>
+								 </table>
+								 </div>
+
                       </div>
-                      <footer style="float: left; clear: both; margin-top:30px">
+					
+                      
+					   <div id ="bottomLinks">
+                            <a href="safety.html" style="padding-right:100px">Safety tips</a>
+                            <a href="privacyPolicy.html" style="padding-right:100px">Privacy Policy</a>
+                            <a href="termsAndConditions.html" style="padding-right:100px">Terms and conditions</a>
+                            <a href="MyProfile.html" style="padding-right:100px">Singles scene</a>					    
+                      </div>
+					  <footer style="bottom: 0px; padding-left: 40px; text-align: center; padding-top: 5px; clear: both">
                                 <p><small><i> Copyright &copy 2015 Cuties. All Rights Reserved. Contact information: <a href="mailto:webmaster@cuties.com">
                                  webmaster@cuties.com</a></i></small></p>
                       </footer>
+					  
                </div>
        </body>
 </html>

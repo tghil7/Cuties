@@ -1,9 +1,249 @@
+
+/***Small screens***/
+
+@media screen and (max-width:600px){
+
 #pageHeader
 {
   background-color: #0099CC ;
 }
 
-.signIn {
+#bottomLinks{
+}
+
+.jumbotron {
+	justify-content: center;
+	
+}
+
+h1{
+	width: 100%;
+	
+}
+
+footer{
+ margin-top: 150px;
+ bottom: 0px; 
+ padding-left: 40px; 
+ text-align: center; 
+ padding-top: 5px; 
+ clear: both;	
+}
+
+
+.credentials{
+ width: 60%;
+ margin: 4px;
+ text-align: center;
+}
+
+.signIn 
+{
+  margin-left: 3px;
+  font-family: "Helvetica, sans-serif";
+  font-style: normal;
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-slide{
+	width: 100%;
+	height: auto;
+}
+
+
+.signUpForm
+{
+  border-style: solid;
+  padding: 5px;
+  text-align: left;
+  width:  100%;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.profileForm
+{
+  float:right;
+  border-style: solid;
+  padding: 5px;
+  text-align: left;
+  width:  270px;
+  height: 540px;
+}
+
+.names
+{
+  color: gold;
+  font-style: italic;
+}
+
+
+
+.labelClass
+{
+  width: 100px;
+}
+
+.textClass
+{
+  width: 150px;
+  border-style: solid rounded;
+  border-color: transparent;
+}
+
+#searchBox
+{
+  margin: 5px;
+  float: right;
+}
+
+.myImg
+{
+  width: 100%;
+  height: auto;
+  
+  
+}
+
+#body
+{
+  font-size: 14px;
+  font-family: Helvetica;
+  background-color: silver;
+  
+
+}
+
+#newrapper
+{
+  font-size: 14px;
+  font-family: Helvetica;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+#userDetails
+{
+  float:right;
+  border-style: groove;
+}
+
+#profileBody
+{
+  margin:15px;
+  clear: left;
+  font-family: Helvetica;
+}
+
+#searchArea
+{
+  font-family: Helvetica;
+  clear:both;
+  border-style: groove;
+  margin-bottom: 15px;
+
+}
+
+a:hover
+{
+  color: green;
+  text-decoration: none;
+}
+
+#mainTab
+{
+  display: none;
+}
+
+.carouselImage
+{
+	height: 120px;
+	width: 100px;
+}
+
+
+#testimonials{
+  margin-left: 10px; 
+  padding-left: 10px;
+}
+
+#contacForm{
+	padding-top: 15 px;
+	font-family: Helvetica;
+	font-style: 
+}
+
+#mySearch{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#bottomLinks{
+	display: inline-block; 
+	float: left; 
+	clear: right; 
+	font-size:14px; 
+	font-family:italic; 
+	margin-top: 30px; 
+	margin-bottom: 20px; 
+	margin-right: auto;
+	margin-left: 90px;
+	padding-right: 100px;
+}
+
+footer{
+	margin-top: 20px;
+}
+}
+
+/**DESKTOP and SIMILAR **/
+
+@media screen and (min-width:601px){
+#pageHeader
+{
+  background-color: #0099CC ;
+  margin-bottom: 10px;
+}
+
+
+footer{
+	margin-top: 20px;
+}
+
+.title{
+	text-align: right;
+	margin-right: 5px;
+}
+
+#process{
+	margin-top: 150px;
+	display: flex;
+	justify-content: center;
+	width: 70%;
+	align-items: center;
+	align-content: center;
+}
+
+#our_process{
+	margin-left:8px;
+}
+
+#dropNav{
+      display:none;
+  }
+  
+ .carousel-slide{
+	width: 15%;
+	height: auto;
+}
+
+.signIn 
+{
   margin-left: 200px;
   font-family: "Helvetica, sans-serif";
   font-style: normal;
@@ -38,7 +278,7 @@
   font-style: italic;
 }
 
-#testimonial
+#picSlide
 {
   float:left;
 }
@@ -51,6 +291,8 @@
 .textClass
 {
   width: 150px;
+  border-style: solid rounded;
+  border-color: transparent;
 }
 
 #searchBox
@@ -61,15 +303,18 @@
 
 .myImg
 {
-  with: 240 px;
+  width: 240 px;
   height: 300px;
   float: left;
+  
 }
 
-#wrapper
+#body
 {
   font-size: 14px;
   font-family: Helvetica;
+  background-color: silver;
+  
 
 }
 
@@ -77,6 +322,8 @@
 {
   font-size: 14px;
   font-family: Helvetica;
+  padding-left: 0;
+  padding-right: 0;
 
 }
 
@@ -86,18 +333,70 @@
   border-style: groove;
 }
 
-#searchSection
-{
-  float:right;
-  margin:15px;
-  inline: display-block;
-  clear: left;
-}
-
 #profileBody
 {
   margin:15px;
-  clear: both;
+  clear: left;
+  font-family: Helvetica;
 }
+
+#searchArea
+{
+  font-family: Helvetica;
+  clear:both;
+  border-style: groove;
+  margin-bottom: 15px;
+
+}
+
+a:hover
+{
+  color: green;
+  text-decoration: none;
+}
+
+#mainTab
+{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.carouselImage
+{
+	height: 120px;
+	width: 100px;
+}
+
+
+#testimonials{
+  margin-left: 10px; 
+  padding-left: 10px;
+}
+
+#contacForm{
+	padding-top: 15 px;
+	font-family: Helvetica;
+	font-style: 
+}
+
+#mySearch{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#bottomLinks{
+	display: inline-block; 
+	float: left; 
+	clear: right; 
+	font-size:14px; 
+	font-family:italic; 
+	margin-top: 30px; 
+	margin-bottom: 20px; 
+	margin-right: auto;
+	margin-left: 90px;
+	padding-right: 100px;
+ }	
+}
+
 
 

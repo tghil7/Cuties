@@ -7,24 +7,45 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <link type="text/css" rel="stylesheet" href="sitecss.css">
-  <script type="text/javascript" src="cuties.js"></script>
+  <link  rel="stylesheet" href="sitecss.css">
+  <script  src="cuties.js"></script>
 </head>
-<body>
-<div  id="wrapper" class="container-fluid"  style="margin-left: 200px; margin-right: 200px">
-    <div id = "pageHeader" class="jumbotron" style="background-color: #0099CC">
-    <h1>Cuties!</h1>
-    <p style="margin-left: 50px; float: right"> The number one site for people looking for serious relationships!</p></br></br>
+<body class="container-fluid">
+<div  id="wrapper">
+    <div id = "pageHeader" class="jumbotron" >
+    <h1><a href="Home.html">Cuties!</a></h1>
+    <p> The number one site for people looking for serious relationships!</p></br></br>
          <div id="mySign" class="signIn">
-             <label >Login: </label>
-             <input type="text" id="username">&nbsp;&nbsp;
-              <label >Password: </label>
-             <input type="text" id="password">&nbsp;&nbsp;
-             <button class="btn btn-primary active">Submit</button>
+		     <h1 class="title"> Log in</h1>
+             <label for="username">Username: </label>
+             <input type="text" id="username" class="credentials">&nbsp;&nbsp;
+              <label for="password" >Password : </label>
+             <input type="text" id="password" class="credentials">&nbsp;&nbsp;
+             <button class="btn btn-primary active" onclick="window.open('MyProfile.html','_self')">Submit</button>
         </div>
 
     </div>
+    <div id="mainTab">
+      <ul class="nav nav-tabs">
+	    <li class="active"><a href="Home.html">HOME</a></li>
+        <li><a href="advancedSearch.html">ADVANCED SEARCH</a></li>
+        <li><a href="message.html">SEND A MESSAGE</a></li>
+        <li><a href="MyProfile.html">PROFILE SETTINGS</a></li>
+		<li><a href="#process">OUR PROCESS</a></li>
+      </ul>
+    </div>
+	<div id="dropNav" class="dropdown">
+              <button id="buttonMenu" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" ><span  class="glyphicon glyphicon-th-list"></span></button>
+              <ul class="dropdown-menu pull-left">
+			       <li class="active"><a href="Home.html">HOME</a></li>
+                  <li><a href="advancedSearch.html">ADVANCED SEARCH</a></li>
+                  <li><a href="message.html">SEND A MESSAGE</a></li>
+                  <li><a href="MyProfile.html">PROFILE SETTINGS</a></li>
+		          <li><a href="#process">OUR PROCESS</a></li>		          
+              </ul>
+             </div>
     <div id = "mySignUp">
+	<h1 class="title"> Register</h1>
              <form role="form" id="register"  class="signUpForm" >
                 <table id="fields">
                       <label id="userLabel" class="labelClass">Username: </label><input type="text" id="userText" class="textClass" ><br><br>
@@ -32,11 +53,11 @@
                       <label id="birthLabel" class="labelClass">Date of Birth:   </label><input type="text" id="birthText" class="textClass"><br><br>
                       <label id="sexLabel" class="labelClass">Sex:   </label><input type="text" id="sexText" class="textClass"><br><br>
                       <label id="lookingLabel"class="labelClass">Looking for:   </label><input type="text" id="lookingText" class="textClass"><br><br>
-                      <button type="button" class="btn btn-success">Register!</button>
+                      <button type="button" class="btn btn-success">Submit</button>
                  </table>
            </form>
    </div>
-   <div id="testimonial" class="carousel slide" data-ride="carousel" style="width: inherit; float:left">
+	<div id="picSlide" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#testimonial" data-slide-to="0" class="active"></li>
                 <li data-target="#testimonial" data-slide-to="1"></li>
@@ -44,22 +65,56 @@
               </ol>
     <!--Wrapper for slides--->
                <div class="carousel-inner" id="actualimages" role="listbox">
-                <div class="item active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJbjmpUZqM7a3LjgDTGTrSpp0MExMZTrEjMsQRCu7G0ykbb5aE" class="myImg"></div>
-                <div class="item"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF6Tols1SKUgtShVPbGbfndp1_JTL9M-edPS0ZDTwgEZIELuX9" class="myImg"></div>
-               <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXlL0tWo3EpiRjkz_NnbAvvKehznc8Z5XmopSMoR4R9LeJEWm8" class="myImg"></div>
+                <div class="item active"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJbjmpUZqM7a3LjgDTGTrSpp0MExMZTrEjMsQRCu7G0ykbb5aE" class="myImg img-rounded"></div>
+                <div class="item"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF6Tols1SKUgtShVPbGbfndp1_JTL9M-edPS0ZDTwgEZIELuX9" class="myImg img-rounded"></div>
+               <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXlL0tWo3EpiRjkz_NnbAvvKehznc8Z5XmopSMoR4R9LeJEWm8" class="myImg img-rounded"></div>
               </div>
 
    </div>
-  <h3 style="margin: 5px; color: indianred">Some testimonials...</h3>
-  <h5  class="names">John, 35</h5>
-  <p>Never thought I could be married one day, with such a beautiful lady.<br>
-    Thanks to Cuties, my dream came true!</p><br><br><br>
-  <h5 class="names">Mary, 28</h5>
-  <p>I met Carter through Cuties. He was very respectful, and Cuties made<br>
-    sure he had good morality before we could actually meet!</p>
+   <div id ="testimonials" >
+      <h3 style="margin: 5px; color: indianred">&nbsp;&nbsp;Some testimonials...</h3>
+      <h5  class="names">&nbsp;&nbsp;John, 35</h5>
+     <p>&nbsp;&nbsp;Never thought I could be married one day, with such a beautiful lady.<br>
+    &nbsp;&nbsp;Thanks to Cuties, my dream came true!</p><br><br><br>
+     <h5 class="names">&nbsp;&nbsp;Mary, 28</h5>
+    <p>&nbsp;&nbsp;I met Carter through Cuties. He was very respectful, and Cuties made<br>
+    &nbsp;&nbsp;sure he had good morality before we could actually meet!</p>
+  </div>
+ <div class="modal fade" id="myModal" tabindex="-1" style="margin-left: 450px; margin-right: 300px; margin-top: 200px;">
+                                 <div class="modial-dialog modal-sm">
+                                       <div class="modal-content">
+                                            <div class="modal-header">
+                                                <a class="close" data-dismiss="modal">×</a>
+                                                <h3>Warning!</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                 <p>This website is just a student project on Web development. I do not own the pictures displayed.
+                                                  It is not a real dating website and should not be used as such.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                  <a href="#" class="btn alert-success" data-dismiss="modal">Close</a>
+                                        
+                                            </div>
+                                        </div>    
+                                 </div>
+                             </div> 
+<section id="process">
+	<img src="images/couple.jpg" alt="happy_couple" class="myImg img-rounded">
+	<p id="our_process">
+	We use qualitative information to match each person with 
+	the best candidate based on their like, lifestyle and physical preference.
+	If you are still single after trying a few different websites, or are tired
+	of trying meeting new people in bars, please give us a shot. 
+</p>
+</section>
 
-
-   <footer style="float: left; clear: both; margin-top:30px">
+     <div id ="bottomLinks">
+                            <a href="safety.html">Safety tips</a>
+                            <a href="privacyPolicy.html">Privacy Policy</a>
+                            <a href="termsAndConditions.html">Terms and conditions</a>
+                            <a href="MyProfile.html">Singles scene</a>					    
+                      </div>
+   <footer>
         <p><small><i> Copyright &copy 2015 Cuties. All Rights Reserved. Contact information: <a href="mailto:webmaster@cuties.com">
     webmaster@cuties.com</a></i></small></p>
    </footer>
