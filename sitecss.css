@@ -5,18 +5,13 @@
 @media screen and (max-width:600px){
 
 
-
-
-
-
 #pageHeader
 {
   background-color: #0099CC ;
 }
 
 
-#bottomLinks{
-}
+
 
 .jumbotron {
 	justify-content: center;
@@ -218,9 +213,6 @@ footer{
 }
 
 
-footer{
-	margin-top: 20px;
-}
 
 .title{
 	text-align: right;
@@ -252,17 +244,8 @@ footer{
 .signIn 
 {
 
-.signIn {
-
-.signIn 
-{
-
-  margin-left: 200px;
-  font-family: "Helvetica, sans-serif";
-  font-style: normal;
-  font-size: 14px;
-  float: right;
 }
+
 
 
 .signUpForm
@@ -375,32 +358,7 @@ a:hover
   padding-left: 5px;
 }
 
-.carouselImage
-{
-	height: 120px;
-	width: 100px;
 
-  margin:15px;
-  clear: both;
-
-  font-family: Helvetica;
-  clear:both;
-  border-style: groove;
-  margin-bottom: 15px;
-
-}
-
-a:hover
-{
-  color: green;
-  text-decoration: none;
-}
-
-#mainTab
-{
-  padding-right: 5px;
-  padding-left: 5px;
-}
 
 .carouselImage
 {
@@ -409,14 +367,10 @@ a:hover
 }
 
 
-#testimonials{
-  margin-left: 10px; 
-  padding-left: 10px;
-}
+
 
 #contacForm{
 	padding-top: 15 px;
-	font-family: Helvetica;
 	font-style: 
 }
 
@@ -432,16 +386,6 @@ a:hover
   padding-left: 10px;
 }
 
-#contacForm{
-	padding-top: 15 px;
-	font-family: Helvetica;
-	font-style: 
-}
-
-#mySearch{
-	margin-bottom: 10px;
-	margin-top: 10px;
-}
 
 #bottomLinks{
 	display: inline-block; 
