@@ -1,12 +1,19 @@
 
+
 /***Small screens***/
 
 @media screen and (max-width:600px){
+
+
+
+
+
 
 #pageHeader
 {
   background-color: #0099CC ;
 }
+
 
 #bottomLinks{
 }
@@ -28,7 +35,7 @@ footer{
  text-align: center; 
  padding-top: 5px; 
  clear: both;	
-}
+ }
 
 
 .credentials{
@@ -244,6 +251,12 @@ footer{
 
 .signIn 
 {
+
+.signIn {
+
+.signIn 
+{
+
   margin-left: 200px;
   font-family: "Helvetica, sans-serif";
   font-style: normal;
@@ -342,6 +355,7 @@ footer{
 
 #searchArea
 {
+
   font-family: Helvetica;
   clear:both;
   border-style: groove;
@@ -365,6 +379,51 @@ a:hover
 {
 	height: 120px;
 	width: 100px;
+
+  margin:15px;
+  clear: both;
+
+  font-family: Helvetica;
+  clear:both;
+  border-style: groove;
+  margin-bottom: 15px;
+
+}
+
+a:hover
+{
+  color: green;
+  text-decoration: none;
+}
+
+#mainTab
+{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.carouselImage
+{
+	height: 120px;
+	width: 100px;
+}
+
+
+#testimonials{
+  margin-left: 10px; 
+  padding-left: 10px;
+}
+
+#contacForm{
+	padding-top: 15 px;
+	font-family: Helvetica;
+	font-style: 
+}
+
+#mySearch{
+	margin-bottom: 10px;
+	margin-top: 10px;
+
 }
 
 

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang ="en">
 <head>
@@ -79,3 +80,68 @@
  </div>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width= device-width, initial-scale = 1">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="sitecss.css">
+  <script type="text/javascript" src="cuties.js"></script>
+</head>
+<body class="container-fluid">
+<div  id="wrapper" style="margin-left: 200px; margin-right: 200px">
+    <div id = "pageHeader" class="jumbotron" style="background-color: #0099CC">
+    <h1><a href="Home.html">Cuties!</a></h1>
+    <p style="margin-left: 50px; float: right"> The number one site for people looking for serious relationships!</p></br></br>
+         <div id="mySign" class="signIn">
+             <label >Login: </label>
+             <input type="text" id="username">&nbsp;&nbsp;
+              <label >Password: </label>
+             <input type="text" id="password">&nbsp;&nbsp;
+             <button class="btn btn-primary active" onclick="window.open('MyProfile.html','_self')">Submit</button>
+        </div>
+
+    </div>
+    <div id="mainTab">
+      <ul class="nav nav-tabs">
+        <li ><a href="Home.html">HOME</a></li>
+        <li><a href="advancedSearch.html">ADVANCED SEARCH</a></li>
+        <li class="active"><a href="message.html">SEND A MESSAGE</a></li>
+        <li><a href="MyProfile.html">PROFILE SETTINGS</a></li>
+      </ul>
+    </div>
+     <div id ="contactPage">
+              
+           <div id="contactForm">
+		   <br/><br/><br/>
+              <form id = "sendMessage" method="post" action="" >
+                   <label>Please enter the username of the person you wish to contact (check their profile if you can't remember):<br/><br/> <input type="text" name="firstName" id="firstName" size="25" /></label><br /><br />
+                   <br /><br />
+                   <img src="C:\Users\Anicet\Documents\Web projects\Cuties\images\messageImage.jpg" class="img-rounded" width="300px"; height="200px"; style="float:right">
+                   <label>Send them a Message below:</label><br />
+				   
+                   <textarea id="commentText" cols="75" rows= "7"></textarea><br /><br /><br />
+                   <input type="button" id="Contact"  value ="Submit"/>&nbsp;&nbsp;&nbsp;
+                  <button id="reset" onclick="reset()">Reset</button>
+				  
+             </form>
+        </div>
+             
+</div>
+  
+
+
+   <footer style="bottom: 0px; padding-left: 40px; text-align: center; padding-top: 5px; clear: both">
+        <p><small><i> Copyright &copy 2015 Cuties. All Rights Reserved. Contact information: <a href="mailto:webmaster@cuties.com">
+    webmaster@cuties.com</a></i></small></p>
+   </footer>
+ </div>
+</body>
+</html>
+
