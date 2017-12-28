@@ -10,7 +10,9 @@
   background-color: #0099CC ;
 }
 
-
+#advancedSearchPage{
+	margin-top: 10px;
+}
 
 
 .jumbotron {
@@ -186,16 +188,14 @@ a:hover
 }
 
 #bottomLinks{
-	display: inline-block; 
-	float: left; 
-	clear: right; 
-	font-size:14px; 
-	font-family:italic; 
+	display: flex; 
 	margin-top: 30px; 
 	margin-bottom: 20px; 
 	margin-right: auto;
-	margin-left: 90px;
-	padding-right: 100px;
+	margin-left: auto;
+	justify-content: center;
+	align-content: space-between;
+	
 }
 
 footer{
@@ -210,6 +210,10 @@ footer{
 {
   background-color: #0099CC ;
   margin-bottom: 10px;
+}
+
+#advancedSearchPage{
+	margin-top: 10px;
 }
 
 
@@ -388,17 +392,17 @@ a:hover
 
 
 #bottomLinks{
-	display: inline-block; 
-	float: left; 
-	clear: right; 
-	font-size:14px; 
-	font-family:italic; 
+	display: flex; 
 	margin-top: 30px; 
 	margin-bottom: 20px; 
 	margin-right: auto;
-	margin-left: 90px;
-	padding-right: 100px;
- }	
+	margin-left: auto;
+	justify-content: center;
+	align-items: space-between;
+	padding-right: 2%;
+	
+}
+
 }
 
 
